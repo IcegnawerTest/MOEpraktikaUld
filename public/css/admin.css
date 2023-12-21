@@ -1,0 +1,87 @@
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Стилизация кастомного чекбокса */
+.custom-checkbox {
+    position: relative;
+    cursor: pointer;
+}
+
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+}
+
+.custom-checkbox .checkbox-icon {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #333;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Стиль для отмеченного чекбокса */
+.custom-checkbox input:checked + .checkbox-icon {
+    background-color: #00f; /* Измените цвет фона на ваш выбор */
+    border-color: #00f; /* Измените цвет границы на ваш выбор */
+}
+
+.mainProductAdmin {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.blockFlexAdmin {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+    padding: 20px;
+}
+
+.mainProductAdd, .mainProductApp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+.mainProductAdd form, .mainProductApp form {
+    background-color: #0D6863;
+    color: #D0CBC8;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: 5px;
+}
+
+.mainProductAdd form input, .mainProductAdd form select {
+    width: 400px;
+    margin: 2px;
+}
+
+.mainProductAdd form button, .mainProductApp .button {
+    border: 1px solid #053400;
+    background-color: #56918e;
+    color: #D0CBC8;
+}
+
+.mainProductAdd textarea {
+    height: 40px;
+    width: 400px;
+}
+
+.flexform {
+    width: 100%;
+}
